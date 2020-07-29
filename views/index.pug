@@ -1,0 +1,17 @@
+html
+  head
+    style
+        include style.css
+  body
+    form(action='/api/profile', method='POST')
+        input(type="text" name="firstName" placeholder="First Name")
+        div.input
+          input(type="text" name="lastName" placeholder="Last Name")
+        div.input
+          input(type="text" name="team" placeholder="Team")
+        div.input
+          input(type="text" name="position" placeholder="Position")
+        div.input
+          input(type="text" name="age" placeholder="Age")
+        div.input
+          input(type="submit" value="Add Profile")
